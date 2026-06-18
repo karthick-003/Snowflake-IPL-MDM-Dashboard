@@ -128,10 +128,8 @@ The Gold layer structures the cleaned data into an optimized **Star Schema** des
 ├── .streamlit/
 │   └── secrets.toml      # LOCAL ONLY: Hidden database credentials (ignored by git)
 ├── data/                 # Sample raw data subsets for local debugging
-├── sql_scripts/          # Curated Snowflake scripts (Bronze, Silver, Gold layers)
-│   ├── 1_bronze_ingest.sql
-│   ├── 2_silver_transform.sql
-│   └── 3_gold_analytics.sql
+├── sql_scripts/          # Curated Snowflake scripts 
+│   └── ipl_mdm_medallion_pipeline.sql   # Single end-to-end SQL data pipeline script
 ├── images/               # Screenshots used for documentation
 ├── .gitignore            # Explicitly blocks security risks (secrets.toml) from uploading
 ├── app.py                # Main application entrypoint containing layouts and dashboard logic
